@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body {
+    height: 1000px;
+}
+
 header {
     margin: auto;
     padding:15px;
@@ -43,7 +47,7 @@ nav a {
 .container   {
     display: flex;
     margin: auto;
-    min-height: 380px;
+    min-height: 320px;
     justify-content: center;
 }
 
@@ -69,6 +73,7 @@ nav a {
     border-radius: 8px;
     border:none;
     background: linear-gradient(to right,rgb(95, 52, 115),rgb(200, 144, 226));
+    color:white;
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
@@ -81,6 +86,7 @@ table {
     border: 3px solid rgb(95, 52, 115);
     border-radius: 16px;
     margin: auto;
+    margin-bottom: 15px;
     max-width: 90%;
 
 }
@@ -100,6 +106,19 @@ td:last-child {
     border-left: 1px dotted black;
     padding-left: 5px;
 }
+
+#botao {
+    border-radius: 8px;
+    border:none;
+    background: linear-gradient(to right,rgb(95, 52, 115),rgb(200, 144, 226));
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding:6px;
+    margin: 15px;
+}
+
 footer {
     background-color: rgb(95, 52, 115);
     text-align: center;
