@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <title>Albuns</title>
+    <link rel="stylesheet" href="style.css" >
+    <script>
+
+        let valores
+        let table = document.createElement("table")
+
+        {
+                let linha = document.createElement("tr")
+            let id = document.createElement("td")
+            let title = document.createElement("td")
+            let conteudo = document.createElement("td")
+
+            let text_id = document.createTextNode("ID")
+            let text_title = document.createTextNode("Título")
+        
+            id.appendChild(text_id)
+            title.appendChild(text_title)
+            linha.appendChild(id)
+            linha.appendChild(title)
+
+            table.appendChild(linha)
+            }
+
+        function criarlinha(i) {
+            let linha = document.createElement("tr")
+            let id = document.createElement("td")
+            let title = document.createElement("td")
+
+            let text_id = document.createTextNode(valores[i].id)
+            let text_title = document.createTextNode(valores[i].title)
+            
+            id.appendChild(text_id)
+            title.appendChild(text_title)
+            linha.appendChild(id)
+            linha.appendChild(title)
+
+            table.appendChild(linha)
+        }
+
+        function iniciar() {
+            
+            document.body.appendChild(table)
+            for (i in valores) {criarlinha(i)}      
+            let elem = document.getElementById('botao');
+            elem.parentNode.removeChild(elem);
+            
+        }
+
+        fetch('https://jsonplaceholder.typicode.com/albums/')
+        .then((response) => response.json())
+        .then((json) => valores = json);
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" style="text-decoration: none;"><h1>Desafio Framework</h1></a>
+    </header>   
+
+    <nav>
+        <a href="index.html">Página Inicial</a>
+    </nav>
+
+    <h1 id="titulo">Tabela de Álbuns</h1>
+    <a onclick="iniciar();" id="botao">Clique para exibir a tabela</a>
+    
+</body>

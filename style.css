@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin: auto;
+    padding:15px;
+    box-shadow: 0px 1px black;
+}
+
+header h1 {
+    text-align: center;
+    font-family:monospace;
+    font-size: 70px;
+    color: black;
+}
+
+nav {
+    margin: auto;
+    margin-top: 1px;
+    box-shadow: 0px 5px 5px grey;
+    text-align: center;
+    background-color: rgb(95, 52, 115);
+}
+
+nav a {
+    font-size: 30px;
+    text-decoration:none;
+    color:white;
+    font-weight: 700;
+}
+
+#titulo {
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family:sans-serif;
+    font-weight: 600;
+}
+
+.container   {
+    display: flex;
+    margin: auto;
+    min-height: 380px;
+    justify-content: center;
+}
+
+.card {
+    margin: auto;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgb(95, 52, 115);
+    min-width: 250px;
+    min-height: 200px;
+    font-size: 10px;
+}
+
+.card:hover {
+    transition: box-shadow 0.5s;
+    border-radius: 16px;
+    box-shadow: 15px 15px 20px rgb(95, 52, 115);
+    width: 100%;
+    max-width: 300px;
+}
+
+.card button {
+    border-radius: 8px;
+    border:none;
+    background: linear-gradient(to right,rgb(95, 52, 115),rgb(200, 144, 226));
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding:5px;
+    margin: 10px auto;
+}
+
+table {
+    padding: 10px;
+    border: 3px solid rgb(95, 52, 115);
+    border-radius: 16px;
+    margin: auto;
+    max-width: 90%;
+
+}
+
+td {
+    border-bottom: 1px dotted black;
+
+}
+
+td:first-child {
+    font-weight: 800;
+    font-size: large;
+    color:rgb(95, 52, 115);    
+}
+
+td:last-child {
+    border-left: 1px dotted black;
+    padding-left: 5px;
+}
+footer {
+    background-color: rgb(95, 52, 115);
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 5px 5px 30px black;
+    color:white;
+}
